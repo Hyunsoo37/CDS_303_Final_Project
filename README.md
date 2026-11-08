@@ -21,8 +21,3 @@ python3 docs/session-1/audit.py "<path to 2025 sales CSV>" "<optional path to bo
 ```
 
 To rerun the Project 0 notebook, use pandas and place the extracted 2025 sales CSV under its original filename in the notebook's working directory.
-
-## Website files
-
-Edit the Markdown pages in `docs/`. When GitHub Pages is configured to deploy
-from `main` and `/docs`, it builds the site directly from these files.
