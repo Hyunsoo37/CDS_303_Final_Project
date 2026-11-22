@@ -1,0 +1,15 @@
+original_column,analysis_column,dtype
+stdr_yyqu_cd,기준_년분기_코드,object
+trdar_se_cd,상권_구분_코드,object
+trdar_se_cd_nm,상권_구분_코드_명,object
+trdar_cd,상권_코드,object
+trdar_cd_nm,상권_코드_명,object
+svc_induty_cd,서비스_업종_코드,object
+svc_induty_cd_nm,서비스_업종_코드_명,object
+stor_co,general_stores,int64
+similr_induty_stor_co,total_stores,int64
+opbiz_rt,opbiz_rt,int64
+opbiz_stor_co,opbiz_stor_co,int64
+clsbiz_rt,clsbiz_rt,int64
+clsbiz_stor_co,clsbiz_stor_co,int64
+frc_stor_co,franchise_stores,int64

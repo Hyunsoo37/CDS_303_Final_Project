@@ -22,5 +22,7 @@ What do 2025 estimated sales by age group and time of day reveal about Seoul's c
 ## Project updates
 
 - [Session 1: Research design](./session-1/index.md)
-- **Next: Data preparation.** Build district profiles, check coverage, and test the connection to store data.
+- [Session 2: Data integration and PCA](./session-2/index.md) — 1,560 complete-year districts, 12 sales shares, six retained components (87.14% explained variance), and integrated store context.
+- [Session 2 executed notebook](./session-2/CDS303_Project2.ipynb)
+- [Data and reproduction instructions](../data/README.md)
 - **Later: Modeling and interpretation.** Compare clustering solutions and prepare explanations for prospective owners.

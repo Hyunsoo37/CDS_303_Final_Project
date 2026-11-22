@@ -1,0 +1,9 @@
+Measure,Value
+Sales districts before merge,1577.0
+Store districts before merge,1650.0
+Rows after left merge,1577.0
+Unique districts after merge,1577.0
+Matched sales districts,1577.0
+Unmatched sales districts,0.0
+Store-only districts,73.0
+Sales district match rate (%),100.0

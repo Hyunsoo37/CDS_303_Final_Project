@@ -1,0 +1,86 @@
+{
+  "analysis_districts": 1560,
+  "retained_components": 6,
+  "retained_variance_pct": 87.13703695397503,
+  "pc1_pc2_variance_pct": 48.16701355600988,
+  "rank": 10,
+  "versions": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.6",
+    "seaborn": "0.13.2"
+  },
+  "raw_files": {
+    "sales_2025.zip": {
+      "csv": "서울시 상권분석서비스(추정매출-상권)_2025년.csv",
+      "bytes": 11886606,
+      "sha256": "9e055e94b3647ddecbdc033c9b80817bcf774fcde2fe423af57fd179153633dc",
+      "csv_sha256": "2e299cd3e78a98d9b46634af0cc768276d8d270eb4c38b5f1b1ce54f8dcd828f"
+    },
+    "stores_2025.zip": {
+      "csv": "서울시 상권분석서비스(점포-상권)_2025년.csv",
+      "bytes": 2119809,
+      "sha256": "133bfc6ce79e13ee5b289490e4667dfba46a0af5d0d71df360a0d324e030a4e6",
+      "csv_sha256": "afe3c49336e4c64e3e4066db1bb61034ab7c238916ff473a37d7667fbb4e1d68"
+    }
+  },
+  "sales_checks": {
+    "Nonpositive total sales rows": 0,
+    "Zero age-attributed sales rows": 1,
+    "Age amounts differ from total": 50298,
+    "Time amounts differ from total": 0,
+    "Weekday/weekend differ from total": 0
+  },
+  "raw_key_matches": {
+    "left_only": 0,
+    "right_only": 219043,
+    "both": 85732
+  },
+  "sales_districts_incomplete_industries": 1126,
+  "sales_industry_pairs_incomplete": 2649,
+  "store_categories_not_in_sales": [
+    "CS200004",
+    "CS200009",
+    "CS200010",
+    "CS200011",
+    "CS200012",
+    "CS200013",
+    "CS200014",
+    "CS200015",
+    "CS200018",
+    "CS200020",
+    "CS200021",
+    "CS200022",
+    "CS200023",
+    "CS200027",
+    "CS200035",
+    "CS200036",
+    "CS200038",
+    "CS200039",
+    "CS200040",
+    "CS200041",
+    "CS200042",
+    "CS200043",
+    "CS200044",
+    "CS200045",
+    "CS200046",
+    "CS200047",
+    "CS300005",
+    "CS300012",
+    "CS300013",
+    "CS300023",
+    "CS300030",
+    "CS300034",
+    "CS300037",
+    "CS300038",
+    "CS300039",
+    "CS300040",
+    "CS300041",
+    "CS300042"
+  ],
+  "age_coverage_min": 11.822120148221474,
+  "age_coverage_median": 93.97408220305095,
+  "transactions_min": 210
+}
