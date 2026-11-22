@@ -24,7 +24,7 @@ Extracted `stores_2025.zip` CSV SHA-256: `afe3c49336e4c64e3e4066db1bb61034ab7c23
 
 ## Linkage and field mapping
 
-Original unit: district × industry × quarter. Read codes as text. Sales have Korean field names; stores use English field names. `stdr_yyqu_cd`, `trdar_cd`, `svc_induty_cd` correspond to `기준_년분기_코드`, `상권_코드`, `서비스_업종_코드`. `similr_induty_stor_co` is total stores; `stor_co` is general stores; `frc_stor_co` is franchise stores. The notebook verifies total = general + franchise. See [official field descriptions](https://data.seoul.go.kr/dataList/datasetView.do?currentPageNo=1&infId=OA-15577&serviceKind=1&srvType=A) and saved [sales schema](../docs/session-2/results/sales_schema.csv), [store schema](../docs/session-2/results/stores_schema.csv).
+Original unit: district × industry × quarter. Read codes as text. Sales have Korean field names; stores use English field names. `stdr_yyqu_cd`, `trdar_cd`, `svc_induty_cd` correspond to `기준_년분기_코드`, `상권_코드`, `서비스_업종_코드`. `similr_induty_stor_co` is total stores; `stor_co` is general stores; `frc_stor_co` is franchise stores. The notebook verifies total = general + franchise. See [official field descriptions](https://data.seoul.go.kr/dataList/OA-15577/S/1/datasetView.do?tab=A) and saved [sales schema](../docs/session-2/results/sales_schema.csv), [store schema](../docs/session-2/results/stores_schema.csv).
 
 Sales amounts are summed across reported quarters and industries before shares are calculated. Stores are summed over all 100 reported categories within each district-quarter, then averaged over available quarters. No original missing industry row is inferred to be zero. Store data are aggregated independently of sales to preserve the extra 38 categories. Final integration is a one-to-one left join on district code. These code/name checks do not validate geometry; no older boundary file is used.
 
@@ -47,3 +47,5 @@ Processed CSVs are UTF-8. Age shares use total age-attributed sales, while time 
 4. The notebook finds the repository root using the included raw ZIP path. Run from the repository root or the notebook directory. It recreates processed CSVs, result tables and figures. Save the notebook to retain new outputs.
 
 The Python packages were validated with Python 3.13.9; exact analytical package versions are recorded in requirements.txt and results/summary.json. There is no train/test split or stochastic clustering at this stage. Full-SVD PCA is deterministic; the seed 2000 follows Demo 6. The execution environment used a new in-process IPython kernel because network sockets were blocked; the report states that validation limit explicitly.
+
+The [quarter coverage audit](../docs/session-2/results/quarter_coverage.csv) records source row, district and industry counts for each quarter. The [validation record](../docs/session-2/results/validation.json) records the fresh-kernel execution and saved-output consistency checks.

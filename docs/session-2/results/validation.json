@@ -1,0 +1,36 @@
+{
+  "validated_at": "2026-11-22T19:17:22+09:00",
+  "execution_method": "New Python 3.13.9 process; fresh ipykernel.InProcessKernel; nine code cells in order; captured actual table and image outputs.",
+  "standard_jupyter_transport": "Attempted; blocked by sandbox PermissionError on socket binding. Browser Jupyter execution was not performed.",
+  "checks": {
+    "fresh_kernel_9_code_cells_and_4_saved_figures": "pass",
+    "relative_paths_and_no_clustering_or_classification": "pass",
+    "shapes_unique_keys_matching_coverage_and_finite_12_inputs": "pass",
+    "annual_sales_and_independent_all_category_store_aggregation": "pass",
+    "saved_scaler_loadings_scores_eigenvalues_and_rank": "pass",
+    "both_raw_archives_and_csv_sha256": "pass",
+    "report_tables_and_notebook_interpretations_agree": "pass",
+    "readme_report_data_relative_links": "pass",
+    "local_sales_csv_matches_original_course_csv": "pass",
+    "project1_files_unchanged": "pass"
+  },
+  "checked_relative_links": 31,
+  "analysis_districts": 1560,
+  "pca_features": [
+    "age_10s",
+    "age_20s",
+    "age_30s",
+    "age_40s",
+    "age_50s",
+    "age_60plus",
+    "time_00_06",
+    "time_06_11",
+    "time_11_14",
+    "time_14_17",
+    "time_17_21",
+    "time_21_24"
+  ],
+  "retained_components": 6,
+  "retained_variance_pct": 87.13703695397503,
+  "notebook_sha256": "0aca95570566b168f237ab0619e0b797863595036cac55e18027f9ee436c4c95"
+}
